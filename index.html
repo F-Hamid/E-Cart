@@ -1,384 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <script src="https://kit.fontawesome.com/e2b9c59bdf.js" crossorigin="anonymous"></script>
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script
+      src="https://kit.fontawesome.com/e2b9c59bdf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
     <title>Shopping Cart</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- navigation section -->
     <nav id="navbar">
+      <div class="left-navbar">
+        <img class="logo" src="images/asset2.png" alt="logo" />
+        <p>ALIEN OUTFITS</p>
+      </div>
 
-        <div class="left-navbar">
-            <img class="logo" src="images/asset2.png" alt="logo">
-            <p>ALIEN OUTFITS</p>
+      <div class="middle-navbar">
+        <div class="search-div">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input class="search" type="text" placeholder="Search...." />
+      </div>
+
+      <div class="right-navbar">
+        <div class="notifications-div">
+          <img
+            class="notifications"
+            src="images/notifications.svg"
+            alt="notifications"
+          />
+          <div class="noti">7</div>
         </div>
 
-        <div class="middle-navbar">
-            <div class="search-div">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <input class="search" type="text" placeholder="Search....">
+        <div class="bag-div">
+          <img class="cart" src="images/cart.svg" alt="cart" />
+          <div class="bag">1</div>
         </div>
 
-        <div class="right-navbar">
-
-            <div class="notifications-div">
-                <img class="notifications" src="images/notifications.svg" alt="notifications">
-                <div class="noti">7</div>
-            </div>
-
-            <div class="bag-div">
-                <img class="cart" src="images/cart.svg" alt="cart">
-                <div class="bag">1</div>
-            </div>
-
-            <div class="profile">
-                <img class="profile" src="images/profile.svg" alt="user"/>
-            </div>
-
+        <div class="profile">
+          <img class="profile" src="images/profile.svg" alt="user" />
         </div>
-
+      </div>
     </nav>
 
     <!-- cart section -->
     <section id="items">
+      <div class="item-title">
+        <h1>Shopping Cart</h1>
+      </div>
 
-        <div class="item-title">
-            <h1>Shopping Cart</h1>
+      <div class="item1">
+        <div class="half">
+          <div class="image1">
+            <img class="person" src="images/person1.jpg" alt="person" />
+          </div>
+
+          <div class="item-text">
+            <p class="item-name">
+              Amazing yellow jacket
+              <span class="leaf">
+                <img class="mint" src="images/mint.png" alt="mint" />
+              </span>
+            </p>
+            <p class="item-color">
+              Color: <span class="color">Bright yellow</span>
+            </p>
+            <p class="item-size">Size: <span class="size">L</span></p>
+          </div>
         </div>
 
-        <div class="item1">
-
-                <div class="half">
-
-                    <div class="image1">
-                        <img class="person" src="images/person1.jpg" alt="person">
-                    </div>
-    
-                    <div class="item-text">
-                        <p class="item-name">Amazing yellow jacket <span class="leaf">
-                            <img class="mint" src="images/mint.png" alt="mint">
-                        </span></p>
-                        <p class="item-color">Color: <span class="color">Bright yellow</span></p>
-                        <p class="item-size">Size: <span class="size">L</span></p>
-                    </div>
-
-                </div>
-
-                <div class="second-half">
-                    <p class="forty-div">$<span class="forty">45</span>.00</p>
-                    <p class="fifty">$55.00</p>
-                </div>
-
-                <div class="third-half">
-                    <p>Quantity</p>
-                    <div class="q-buttons">
-                        <button class="add-minus minus">-</button>
-                        <p class="one">1</p>
-                        <button class="add-minus add">+</button>
-                    </div>
-                </div>
-
-                <div class="fourth-half">
-                    <div class="like-div">
-                        <i id="heart" class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <div class="delete-div">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-
+        <div class="second-half">
+          <p class="forty-div">
+            $<span class="forty qte-one price delete-div1">45</span>.00
+          </p>
+          <p class="fifty">$55.00</p>
         </div>
 
-        <div class="item1 item11">
-
-                <div class="half">
-
-                    <div class="image1">
-                        <img class="person" src="images/person2.jpg" alt="person">
-                    </div>
-    
-                    <div class="item-text">
-                        <p class="item-name">Red Velvet Overcoat <span class="leaf">
-                            <img class="mint" src="images/leaf.png" alt="mint">
-                        </span></p>
-                        <p class="item-color">Color: <span class="color">Bright red</span></p>
-                        <p class="item-size">Size: <span class="size">M</span></p>
-                    </div>
-
-                </div>
-
-                <div class="second-half">
-                    <p class="forty-div">$<span class="forty2">45</span>.00</p>
-                    <p class="fifty">$55.00</p>
-                </div>
-
-                <div class="third-half">
-                    <p>Quantity</p>
-                    <div class="q-buttons">
-                        <button class="add-minus minus2">-</button>
-                        <p class="one2 one">1</p>
-                        <button class="add-minus add2">+</button>
-                    </div>
-                </div>
-
-                <div class="fourth-half">
-                    <div class="like-div">
-                        <i id="heart" class="fa-solid fa-heart heart"></i>
-                    </div>
-
-                    <!-- add delete-div2 next to the delete-div when using single item to delete -->
-                    <div class="delete-div">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-
+        <div class="third-half">
+          <p>Quantity</p>
+          <div class="q-buttons">
+            <button id="minus" class="add-minus minus">-</button>
+            <p class="one">0</p>
+            <button id="plus" class="add-minus add">+</button>
+          </div>
         </div>
 
-        <div class="item1 item22">
+        <div class="fourth-half">
+          <div class="like-div">
+            <i id="heart" class="fa-solid fa-heart heart"></i>
+          </div>
 
-                <div class="half">
+          <div class="1 delete-div">
+            <i class="fa-solid fa-trash-can delete1"></i>
+          </div>
+        </div>
+      </div>
 
-                    <div class="image1">
-                        <img class="person" src="images/person3.jpg" alt="person">
-                    </div>
-    
-                    <div class="item-text">
-                        <p class="item-name">Beautiful Wedding Gown <span class="leaf">
-                            <img class="mint" src="images/leaf2.png" alt="mint">
-                        </span></p>
-                        <p class="item-color">Color: <span class="color">Milk white</span></p>
-                        <p class="item-size">Size: <span class="size">M</span></p>
-                    </div>
+      <div class="item1 item11">
+        <div class="half">
+          <div class="image1">
+            <img class="person" src="images/person2.jpg" alt="person" />
+          </div>
 
-                </div>
-
-                <div class="second-half">
-                    <p class="forty-div">$<span class="forty3">45</span>.00</p>
-                    <p class="fifty">$55.00</p>
-                </div>
-
-                <div class="third-half">
-                    <p>Quantity</p>
-                    <div class="q-buttons">
-                        <button class="add-minus minus3">-</button>
-                        <p class="one3 one">1</p>
-                        <button class="add-minus add3">+</button>
-                    </div>
-                </div>
-
-                <div class="fourth-half">
-                    <div class="like-div">
-                        <i id="heart3" class="fa-heart fa-solid"></i>
-                    </div>
-
-                    <div class="delete-div">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-
+          <div class="item-text">
+            <p class="item-name">
+              Red Velvet Overcoat
+              <span class="leaf">
+                <img class="mint" src="images/leaf.png" alt="mint" />
+              </span>
+            </p>
+            <p class="item-color">
+              Color: <span class="color">Bright red</span>
+            </p>
+            <p class="item-size">Size: <span class="size">M</span></p>
+          </div>
         </div>
 
-        <div class="item1 item33">
-
-                <div class="half">
-
-                    <div class="image1">
-                        <img class="person" src="images/person4.jpg" alt="person">
-                    </div>
-    
-                    <div class="item-text">
-                        <p class="item-name">Yellow Hoddie <span class="leaf">
-                            <img class="mint" src="images/plant.png" alt="mint">
-                        </span></p>
-                        <p class="item-color">Color: <span class="color">Bright yellow</span></p>
-                        <p class="item-size">Size: <span class="size">S</span></p>
-                    </div>
-
-                </div>
-
-                <div class="second-half">
-                    <p class="forty-div">$<span class="forty4">45</span>.00</p>
-                    <p class="fifty">$55.00</p>
-                </div>
-
-                <div class="third-half">
-                    <p>Quantity</p>
-                    <div class="q-buttons">
-                        <button class="add-minus minus4">-</button>
-                        <p class="one4 one">1</p>
-                        <button class="add-minus add4">+</button>
-                    </div>
-                </div>
-
-                <div class="fourth-half">
-                    <div class="like-div">
-                        <i id="heart4" class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <div class="delete-div">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-
+        <div class="second-half">
+          <p class="forty-div">
+            $<span class="forty2 qte-one2 price delete-div2">45</span>.00
+          </p>
+          <p class="fifty">$55.00</p>
         </div>
 
-        <div class="item1 item44">
-
-                <div class="half">
-
-                    <div class="image1">
-                        <img class="person" src="images/person5.jpg" alt="person">
-                    </div>
-    
-                    <div class="item-text">
-                        <p class="item-name">Chanel Dress <span class="leaf">
-                            <img class="mint" src="images/clover.png" alt="mint">
-                        </span></p>
-                        <p class="item-color">Color: <span class="color">Crystal white</span></p>
-                        <p class="item-size">Size: <span class="size">M</span></p>
-                    </div>
-
-                </div>
-
-                <div class="second-half">
-                    <p class="forty-div">$<span class="forty5">45</span>.00</p>
-                    <p class="fifty">$55.00</p>
-                </div>
-
-                <div class="third-half">
-                    <p>Quantity</p>
-                    <div class="q-buttons">
-                        <button class="add-minus minus5">-</button>
-                        <p class="one5 one">1</p>
-                        <button class="add-minus add5">+</button>
-                    </div>
-                </div>
-
-                <div class="fourth-half">
-                    <div class="like-div">
-                        <i id="heart5" class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <div class="delete-div">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-
+        <div class="third-half">
+          <p>Quantity</p>
+          <div class="q-buttons">
+            <button id="minus" class="add-minus minus">-</button>
+            <p class="one2 one">0</p>
+            <button id="plus" class="add-minus add">+</button>
+          </div>
         </div>
 
-        <div class="item2 item55">
+        <div class="fourth-half">
+          <div class="like-div">
+            <i id="heart" class="fa-solid fa-heart heart"></i>
+          </div>
 
-                <div class="half">
+          <!-- add delete-div2 next to the delete-div when using single item to delete -->
+          <div class="2 delete-div">
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
 
-                    <div class="image1">
-                        <img class="person" src="images/person6.jpg" alt="person">
-                    </div>
-    
-                    <div class="item-text">
-                        <p class="item-name">Offwhite shirt <span class="leaf">
-                            <img class="mint" src="images/bio.png" alt="mint">
-                        </span></p>
-                        <p class="item-color">Color: <span class="color">Rainbow</span></p>
-                        <p class="item-size">Size: <span class="size">L</span></p>
-                    </div>
+      <div class="item1 item22">
+        <div class="half">
+          <div class="image1">
+            <img class="person" src="images/person3.jpg" alt="person" />
+          </div>
 
-                </div>
-
-                <div class="second-half">
-                    <p class="forty-div">$<span class="forty6">45</span>.00</p>
-                    <p class="fifty">$55.00</p>
-                </div>
-
-                <div class="third-half">
-                    <p>Quantity</p>
-                    <div class="q-buttons">
-                        <button class="add-minus minus6">-</button>
-                        <p class="one6 one">1</p>
-                        <button class="add-minus add6">+</button>
-                    </div>
-                </div>
-
-                <div class="fourth-half">
-                    <div class="like-div">
-                        <i id="heart6" class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <div class="delete-div">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div>
-
+          <div class="item-text">
+            <p class="item-name">
+              Beautiful Wedding Gown
+              <span class="leaf">
+                <img class="mint" src="images/leaf2.png" alt="mint" />
+              </span>
+            </p>
+            <p class="item-color">
+              Color: <span class="color">Milk white</span>
+            </p>
+            <p class="item-size">Size: <span class="size">M</span></p>
+          </div>
         </div>
 
+        <div class="second-half">
+          <p class="forty-div">
+            $<span class="forty3 qte-one3 price delete-div3">45</span>.00
+          </p>
+          <p class="fifty">$55.00</p>
+        </div>
+
+        <div class="third-half">
+          <p>Quantity</p>
+          <div class="q-buttons">
+            <button id="minus" class="add-minus minus">-</button>
+            <p class="one3 one">0</p>
+            <button id="plus" class="add-minus add">+</button>
+          </div>
+        </div>
+
+        <div class="fourth-half">
+          <div class="like-div">
+            <i id="heart3" class="fa-heart fa-solid heart"></i>
+          </div>
+
+          <div class="3 delete-div">
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="item1 item33">
+        <div class="half">
+          <div class="image1">
+            <img class="person" src="images/person4.jpg" alt="person" />
+          </div>
+
+          <div class="item-text">
+            <p class="item-name">
+              Yellow Hoddie
+              <span class="leaf">
+                <img class="mint" src="images/plant.png" alt="mint" />
+              </span>
+            </p>
+            <p class="item-color">
+              Color: <span class="color">Bright yellow</span>
+            </p>
+            <p class="item-size">Size: <span class="size">S</span></p>
+          </div>
+        </div>
+
+        <div class="second-half">
+          <p class="forty-div">
+            $<span class="forty4 qte-one4 price delete-div4">45</span>.00
+          </p>
+          <p class="fifty">$55.00</p>
+        </div>
+
+        <div class="third-half">
+          <p>Quantity</p>
+          <div class="q-buttons">
+            <button id="minus" class="add-minus minus">-</button>
+            <p class="one4 one">0</p>
+            <button id="plus" class="add-minus add">+</button>
+          </div>
+        </div>
+
+        <div class="fourth-half">
+          <div class="like-div">
+            <i id="heart4" class="fa-solid fa-heart heart"></i>
+          </div>
+
+          <div class="4 delete-div">
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="item1 item44">
+        <div class="half">
+          <div class="image1">
+            <img class="person" src="images/person5.jpg" alt="person" />
+          </div>
+
+          <div class="item-text">
+            <p class="item-name">
+              Chanel Dress
+              <span class="leaf">
+                <img class="mint" src="images/clover.png" alt="mint" />
+              </span>
+            </p>
+            <p class="item-color">
+              Color: <span class="color">Crystal white</span>
+            </p>
+            <p class="item-size">Size: <span class="size">M</span></p>
+          </div>
+        </div>
+
+        <div class="second-half">
+          <p class="forty-div">
+            $<span class="forty5 qte-one5 price delete-div5">45</span>.00
+          </p>
+          <p class="fifty">$55.00</p>
+        </div>
+
+        <div class="third-half">
+          <p>Quantity</p>
+          <div class="q-buttons">
+            <button id="minus" class="add-minus minus">-</button>
+            <p class="one5 one">0</p>
+            <button id="plus" class="add-minus add">+</button>
+          </div>
+        </div>
+
+        <div class="fourth-half">
+          <div class="like-div">
+            <i id="heart5" class="fa-solid fa-heart heart"></i>
+          </div>
+
+          <div class="5 delete-div">
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="item2 item55">
+        <div class="half">
+          <div class="image1">
+            <img class="person" src="images/person6.jpg" alt="person" />
+          </div>
+
+          <div class="item-text">
+            <p class="item-name">
+              Offwhite shirt
+              <span class="leaf">
+                <img class="mint" src="images/bio.png" alt="mint" />
+              </span>
+            </p>
+            <p class="item-color">Color: <span class="color">Rainbow</span></p>
+            <p class="item-size">Size: <span class="size">L</span></p>
+          </div>
+        </div>
+
+        <div class="second-half">
+          <p class="forty-div">
+            $<span class="forty6 6 qte-one6 price delete-div6">45</span>.00
+          </p>
+          <p class="fifty">$55.00</p>
+        </div>
+
+        <div class="third-half">
+          <p>Quantity</p>
+          <div class="q-buttons">
+            <button id="minus" class="add-minus minus">-</button>
+            <p class="one6 one">0</p>
+            <button id="plus" class="add-minus add">+</button>
+          </div>
+        </div>
+
+        <div class="fourth-half">
+          <div class="like-div">
+            <i id="heart6" class="fa-solid fa-heart heart"></i>
+          </div>
+
+          <div class="6 delete-div">
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- total section -->
     <section id="totals">
+      <div class="totals-first"></div>
 
-        <div class="totals-first"></div>
-
-        <div class="totals-second">
-
-            <div class="second-first">
-                <p class="code">Transaction code</p>
-                <p class="code2">SAM199</p>
-            </div>
-
-            <div class="second-second">
-                <input class="coupon" type="text" placeholder="COUPON CODE">
-                <button class="apply" type="submit">Apply</button>
-            </div>
-
-            <div class="second-third">
-
-                <div class="third-first">
-                    <p class="order">Items Purchased</p>
-                    <p><span class="count1 count9">6</span> items</p>
-                </div>
-
-                <div class="third-first">
-                    <p class="order">Order Summary</p>
-                    <p>$ <span class="count1 count2">122</span></p>
-                </div>
-
-                <div class="third-second">
-                    <p class="shipping">Shipping</p>
-                    <p>$ <span class="count1">10</span></p>
-                </div>
-
-                <div class="third-third">
-                    <p class="vat">VAT(Tax)</p>
-                    <p>$ <span class="count1">10</span></p>
-                </div>
-
-                <div class="third-fourth">
-                    <p class="total">Total Amount</p>
-                    <p class="count11">$ <span class="count21">142</span></p>
-                </div>
-            </div>
-
-            <div class="second-fourth">
-                <p class="shipping">Shipping, taxes and discounts are calculated at checkout.</p>
-                <button class="checkout">Checkout</button>
-            </div>
-
-            <div class="verified">
-                <img class="verify" src="https://img.icons8.com/glyph-neue/64/FFFFFF/security-shield-green.png"/>
-                <p>Verified by IDE</p>
-            </div>
+      <div class="totals-second">
+        <div class="second-first">
+          <p class="code">Transaction code</p>
+          <p class="code2">SAM199</p>
         </div>
 
+        <div class="second-second">
+          <input class="coupon" type="text" placeholder="COUPON CODE" />
+          <button class="apply" type="submit">Apply</button>
+        </div>
+
+        <div class="second-third">
+          <div class="third-first">
+            <p class="order">Items Purchased</p>
+            <p><span class="count1 count9">6</span> items</p>
+          </div>
+
+          <div class="third-first">
+            <p class="order">Order Summary</p>
+            <p>$ <span class="count1 count2 total-order">0</span></p>
+          </div>
+
+          <div class="third-second">
+            <p class="shipping">Shipping</p>
+            <p>$ <span class="count1 shipping-div">10</span></p>
+          </div>
+
+          <div class="third-third">
+            <p class="vat">VAT(Tax)</p>
+            <p>$ <span class="count1 tax-div">10</span></p>
+          </div>
+
+          <div class="third-fourth">
+            <p class="total">Total Amount</p>
+            <p class="count11">$ <span class="count21 total-amount">0</span></p>
+          </div>
+        </div>
+
+        <div class="second-fourth">
+          <p class="shipping">
+            Shipping, taxes and discounts are calculated at checkout.
+          </p>
+          <button class="checkout">Checkout</button>
+        </div>
+
+        <div class="verified">
+          <img
+            class="verify"
+            src="https://img.icons8.com/glyph-neue/64/FFFFFF/security-shield-green.png"
+          />
+          <p>Verified by IDE</p>
+        </div>
+      </div>
     </section>
 
-    <script src="script.js"></script>  
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
