@@ -10,6 +10,7 @@ let taxDiv = document.querySelector(".tax-div");
 let total = 0;
 let totalAmount = 0;
 
+
 add.forEach((e) => {
   // Incrementing quantity & Item Price
   e.addEventListener("click", () => {
@@ -77,7 +78,7 @@ for (let p = 0; p < deleteButtons.length; p++) {
   let button = deleteButtons[p];
   button.addEventListener("click", function (event) {
     var buttonClicked = event.target;
-    // Total amount minus deleted Cart item amount
+// Total amount minus deleted Cart item 
     if (total > 0) {
       total -= document.querySelector(
         ".delete-div" + button.className[0]
@@ -87,3 +88,4 @@ for (let p = 0; p < deleteButtons.length; p++) {
     buttonClicked.parentElement.parentElement.parentElement.remove();
   });
 }
+
